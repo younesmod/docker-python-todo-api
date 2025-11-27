@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Scan Redis Image
+      - name: Scan Flask Image
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: "ghcr.io/${{ github.repository_owner }}/docker-python-todo-api:latest"
